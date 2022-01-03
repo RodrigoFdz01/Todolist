@@ -1,5 +1,5 @@
 let input = document.querySelector(".input");
-let botonAgregar = document.querySelector(".boton-agregar");
+let botonAgregar = document.querySelector(".botonagregar");
 let container = document.querySelector(".container");
 let body = document.querySelector("body");
 let inputValue = input.value;
@@ -27,7 +27,7 @@ function crearDiv() {
   //creo el boton candado
   let botonEditar = document.createElement("button");
   botonEditar.innerHTML = '<i class="fas fa-lock"></i>';
-  botonEditar.classList.add(".boton-editar");
+  botonEditar.classList.add("boton-editar");
 
   let divCreado = document.createElement("div");
   divCreado.appendChild(tarea);

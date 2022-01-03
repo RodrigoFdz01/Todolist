@@ -8,112 +8,246 @@ body {
   min-height: 100%;
   text-align: center;
   background-size: cover;
-
 }
 
-#card {
- 
-  margin: auto;
-  margin-top: 80px;
-  border: 1px solid white;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  width: 550px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-h1 {
-  color: white;
-  text-shadow: 1px 2px rgb(27, 27, 27);
+#card p {
+  color: rgb(252, 246, 246);
+  text-shadow: 1px 3px rgb(27, 27, 27);
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.input-div {
-  margin-bottom: 15px;
-}
 .input {
-  width: 400px;
-  height: 48px;
-  margin: 5px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: none;
   border-radius: 10px;
   background-color: white;
-  font-size: 18px;
+  border: 1px solid rgb(255, 255, 255);
 }
-
-/*.input {
-  width: 53%;
-  height: 50px;
-  margin: 5px;
-  padding-bottom: 0px;
-  padding-left: 5px;
-  padding-right: 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: white;
-  font-size: 10px;
-}*/
-
-button {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  border: none;
+.botonagregar {
   border-radius: 10px;
   background-color: rgb(255, 6, 46);
   color: white;
+  border: none;
 }
-
-button:hover {
+.botonagregar:hover {
   opacity: 0.9;
+}
+.boton-editar {
+  border-radius: 10px;
+  background-color: rgb(255, 6, 46);
+  color: white;
+  border: none;
+}
+.boton-remover {
+  border-radius: 10px;
+  background-color: rgb(255, 6, 46);
+  color: white;
+  border: none;
 }
 
 .item-input {
-  height: 50px;
-  width: 300px;
-  padding: 0px 20px;
-  border: 1px solid white;
-  border-radius: 10px;
-  font-size: 20px;
   color: white;
   background: none;
   outline: none;
   text-shadow: 1px 2px rgb(29, 28, 28);
-}
-
-.item {
-  margin-bottom: 10px;
-}
-
-.boton-editar {
-  height: 50px;
-  width: 50px;
-  border: none;
-  background: none;
-  color: #62d0ff;
-  font-size: 1.4rem;
-  font-family: Montserrat, sans-serif;
-  height: 50px;
-}
-
-.boton-remover {
-  height: 50px;
-  width: 50px;
-  outline: none;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 10px;
-  background-color: rgb(255, 6, 46);
-  font-size: 20px;
 }
 
-@media screen and (max-width: 320px) {
+/*ddddddddddddddddddddddddddd*/
+
+@media (min-width: 1025px) {
   #card {
-    height: 100%;
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
     width: 80%;
-    padding: 0px 20px;
-    font-size: 10px;
+  }
+
+  .input-div {
+    margin-bottom: 20px;
+  }
+
+  .botonagregar {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46);
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .botonagregar:hover {
+    opacity: 0.9;
+  }
+
+  .item {
+    margin-bottom: 50px;
+  }
+
+  .item-input {
+    width: 40%;
+    height: 80px;
+    font-size: 2.5em;
+    color: white;
+    background: none;
+    outline: none;
+    text-shadow: 1px 2px rgb(29, 28, 28);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .boton-editar {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46);
+    color: white;
+    font-size: 1.8em;
+    margin: 5px;
+  }
+
+  .boton-remover {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 6, 46);
+    color: white;
+    font-size: 1.8em;
+    margin: 5px;
+  }
+  #card p {
+    color: rgb(252, 246, 246);
+    text-shadow: 1px 3px rgb(27, 27, 27);
+    font-size: 3.5em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .input {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    width: 80%;
+    height: 80px;
+    margin: 5px;
+    font-size: 2em;
+  }
+  .input::placeholder {
+    color: rgb(71, 66, 66);
+    margin-left: 10px;
+    font-size: 1.6em;
+    font-style: oblique;
   }
 }
-  
- 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #card p {
+    font-size: 1.5em;
+  }
+  .input {
+    width: 80%;
+    height: 38px;
+    margin: 5px;
+  }
+  .botonagregar {
+    width: 45px;
+    height: 45px;
+  }
+  .item-input {
+    height: 38px;
+    width: 170px;
+    padding: 0px 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .boton-editar {
+    height: 50px;
+    width: 45px;
+    border: none;
+    margin: 5px 5px;
+  }
+
+  .boton-remover {
+    height: 50px;
+    width: 45px;
+    border: none;
+  }
+}
+@media (min-width: 376px) and (max-width: 767px) {
+  #card p {
+    font-size: 1.5em;
+  }
+  .input {
+    width: 90%;
+    height: 38px;
+    margin: 5px;
+  }
+  .botonagregar {
+    width: 45px;
+    height: 45px;
+  }
+  .item-input {
+    height: 38px;
+    width: 140px;
+    padding: 0px 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .boton-editar {
+    height: 50px;
+    width: 45px;
+    border: none;
+    margin: 5px 5px;
+  }
+
+  .boton-remover {
+    height: 50px;
+    width: 45px;
+    border: none;
+  }
+}
+@media (min-width: 250px) and (max-width: 375px) {
+  #card p {
+    font-size: 1.5em;
+  }
+  .input {
+    width: 90%;
+    height: 38px;
+    margin: 5px;
+  }
+  .botonagregar {
+    width: 45px;
+    height: 45px;
+  }
+  .item-input {
+    height: 38px;
+    width: 140px;
+    padding: 0px 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .boton-editar {
+    height: 50px;
+    width: 45px;
+    border: none;
+    margin: 5px 5px;
+  }
+
+  .boton-remover {
+    height: 50px;
+    width: 45px;
+    border: none;
+  }
+}
