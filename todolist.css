@@ -1,5 +1,4 @@
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   /*background-color: rgb(9 78 58 / 80%);*/
   background-image: url(2.jpg);
   background-repeat: no-repeat;
@@ -10,12 +9,11 @@ body {
   background-size: cover;
 }
 
-#card p {
-  color: rgb(252, 246, 246);
+#titulo {
+  color: rgb(255, 255, 255);
   text-shadow: 1px 3px rgb(27, 27, 27);
-  font-style: italic;
+  font-family: monospace;
   font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .input {
@@ -25,12 +23,12 @@ body {
 }
 .botonagregar {
   border-radius: 10px;
-  background-color: rgb(255, 6, 46);
+  background-color: rgb(27, 72, 156);
   color: white;
   border: none;
 }
 .botonagregar:hover {
-  opacity: 0.9;
+  border: 3px solid rgb(255, 255, 255);
 }
 .boton-editar {
   border-radius: 10px;
@@ -54,9 +52,9 @@ body {
   border-radius: 10px;
 }
 
-/*ddddddddddddddddddddddddddd*/
-
-@media (min-width: 1025px) {
+/*dddddddddddddddddddddddddmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmd*/
+/*
+@media (min-width: 1025px) and (max-width: 1400px) {
   #card {
     margin: auto;
     margin-top: 80px;
@@ -73,13 +71,13 @@ body {
   }
 
   .botonagregar {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     border: none;
     border-radius: 10px;
-    background-color: rgb(255, 6, 46);
+    background-color: rgb(27, 72, 156);
     color: white;
-    font-size: 1.5em;
+    font-size: 3em;
   }
 
   .botonagregar:hover {
@@ -92,8 +90,8 @@ body {
 
   .item-input {
     width: 40%;
-    height: 80px;
-    font-size: 2.5em;
+    height: 150px;
+    font-size: 4em;
     color: white;
     background: none;
     outline: none;
@@ -104,30 +102,30 @@ body {
   }
 
   .boton-editar {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     border: none;
     border-radius: 10px;
     background-color: rgb(255, 6, 46);
     color: white;
-    font-size: 1.8em;
+    font-size: 3em;
     margin: 5px;
   }
 
   .boton-remover {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     border: none;
     border-radius: 10px;
     background-color: rgb(255, 6, 46);
     color: white;
-    font-size: 1.8em;
+    font-size: 3em;
     margin: 5px;
   }
-  #card p {
-    color: rgb(252, 246, 246);
+  #titulo {
+    color: white;
     text-shadow: 1px 3px rgb(27, 27, 27);
-    font-size: 3.5em;
+    font-size: 6em;
     font-style: italic;
     font-weight: bold;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -137,20 +135,31 @@ body {
     background-color: white;
     border: 1px solid rgb(255, 255, 255);
     width: 80%;
-    height: 80px;
+    height: 140px;
     margin: 5px;
-    font-size: 2em;
+    font-size: 4em;
   }
   .input::placeholder {
     color: rgb(71, 66, 66);
     margin-left: 10px;
-    font-size: 1.6em;
+    font-size: 1em;
     font-style: oblique;
   }
 }
+*/
+@media (min-width: 768px) and (max-width: 1424px) {
+  #card {
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 80%;
+  }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  #card p {
+  #titulo {
     font-size: 1.5em;
   }
   .input {
@@ -184,7 +193,7 @@ body {
   }
 }
 @media (min-width: 376px) and (max-width: 767px) {
-  #card p {
+  #titulo {
     font-size: 1.5em;
   }
   .input {
@@ -218,7 +227,7 @@ body {
   }
 }
 @media (min-width: 250px) and (max-width: 375px) {
-  #card p {
+  #titulo {
     font-size: 1.5em;
   }
   .input {
