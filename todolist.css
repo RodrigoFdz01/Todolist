@@ -36,6 +36,10 @@ body {
   color: white;
   border: none;
 }
+
+.boton-editar_green {
+  background-color: green;
+}
 .boton-remover {
   border-radius: 10px;
   background-color: rgb(255, 6, 46);

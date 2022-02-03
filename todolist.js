@@ -40,12 +40,14 @@ function crearDiv() {
   });
 
   botonEditar.addEventListener("click", function () {
+    botonEditar.classList.toggle("boton-editar_green");
     tarea.disabled = !tarea.disabled;
 
     if (tarea.disabled) {
       botonEditar.innerHTML = '<i class="fas fa-lock"></i>';
     } else if (!tarea.disabled) {
       botonEditar.innerHTML = '<i class="fas fa-lock-open"></i>';
+      // botonEditar.classList.toggle("boton-editar_green");
     } else {
       console.log("ni true ni false");
     }
